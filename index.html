@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karantina:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>Oahu Luaus</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="header-top">
+      <ul>
+        <li id="phone">
+          <a href="tel:+18664829775" class="phone">(toll free) 1-866-482-9775</a>
+          <a href="tel:+18088922082" class="phone">(local) 808-892-2082</a>
+        </li>
+        <li id="book-now-main">
+          <a href="/reservations.htm"><span class="material-symbols-outlined">calendar_month</span>book now</a>
+        </li>  
+      </ul>
+
+    </div>
+    <ul id="header-main">
+      <li id="logo">
+        <a href="/"> <img src="images/oahu-luaus.png" alt=""> <span>oahu luaus</span></a>
+      </li>
+      <li id="main-nav">
+        <nav>
+          <a href="luaus.htm">Luaus</a>
+          <a href="about.htm">About</a>
+          <a href="blog.htm">Blog</a>
+          <a href="faq.htm">FAQ</a>
+          <a href="contact.htm">Contact</a>
+          <a href="cart/edit" class="cart-link"><span class="material-symbols-outlined">shopping_cart</span>Cart</a>
+        </nav>
+      </li>
+      <button type="button" name="button" class="menu-btn"
+        onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+        <hr class="menu-btn-hr-1" />
+        <hr class="menu-btn-hr-2" />
+        <hr class="menu-btn-hr-3" />
+      </button>
+    </ul>
+  </header>
+  <!-- =================================================== -->
+  <div id="hero">
+    <div id="hero-top">
+      <ul>
+        <li id="hero-top-left">
+          <h1>the best discounts<br>on oahu luaus</h1>
+        </li>
+        <li id="hero-top-right">
+          <a href="/luaus.htm">
+            save up to <b>20%</b><br>
+            on Select luau<br>
+            reservations</a>
+        </li>
+      </ul>
+    </div>
+    <div id="hero-bottom">
+        <div id="hero-slider">
+          <a data-img="images/heros/alohakaihero.jpg" target="_blank" class="hero-slide active" id="slide-1">
+            <div class="hero-slider-content">
+              <h2>Aloha Kai Luau at Sea Life Park</h2>
+              <h3>Special Promo - Up to 20% Off!</h3>
+              <ul>
+                <li>was<span class="strikethrough">$141.36</span></li>
+                <li>from<span>$121.50</span></li>
+              </ul>
+              <button href="/aloha-kai-luau.html">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </a>
+          <a data-img="images/heros/germainesluauhero.jpg" target="_blank" class="hero-slide" id="slide-2">
+            <div class="hero-slider-content">
+              <h2>Germaine's Luau</h2>
+              <h3>Voted Best Luau</h3>
+              <ul>
+                <li>was<span>$141.36</span></li>
+                <li>from<span>$121.50</span></li>
+              </ul>
+              <button href="/aloha-kai-luau.html">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </a>
+          <a href="luau.htm" data-img="images/heros/kamoanahero.jpg" target="_blank" class="hero-slide" id="slide-3">
+            <div class="hero-slider-content">
+              <h2>Aloha Kai Luau at Sea Life Park</h2>
+              <h3>Voted Best Luau</h3>
+              <ul>
+                <li>from<span>$121.50</span></li>
+                <li>save<span>20%</span></li>
+              </ul>
+              <button href="/aloha-kai-luau.html">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </a>
+        </div>
+        <div id="slider-nav">
+            <button type="button" id="slider-left" onclick="plusSlides(-1);clearInterval(carousel);">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>    
+            <button type="button" class="slider-button" onclick="currentSlide(0);clearInterval(carousel);"></button>
+            <button type="button" class="slider-button" onclick="currentSlide(1);clearInterval(carousel);"></button>
+            <button type="button" class="slider-button" onclick="currentSlide(2);clearInterval(carousel);"></button>
+            <button type="button" id="slider-right" onclick="plusSlides(1);clearInterval(carousel);">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </div>
+  </div>
+  <!-- ======================================================== -->
+    <div id="compare-chart-cta">
+      <a href="/compare.html">
+        <section>
+          <header>
+            <span>find the best luau for you</span>
+          </header>
+          <ul>
+            <li>
+              <span class="material-symbols-outlined">done</span>
+              <p>comparison chart</p>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">done</span>
+              <p>luau descriptions</p>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">done</span>
+              <p>map & locations</p>
+            </li>
+            <li></li>
+            <li><button type="button" name="button">learn more</button></li>
+          </ul>
+        </section>
+      </a>
+    </div>
+  <div id="suggested-products">
+    <h2 class="suggested-header">Popular Luaus On Oahu</h2>
+    <ul>
+      <li>
+        <div class="product-med">
+          <header>
+            <h2>Aloha Kai</h2>
+            <h3>Sealife Park Hawaii</h3>
+          </header>
+          <img src="images/preview/alohakaihero2.jpg" alt="">
+          <div class="price">
+            <span class="before-price">$124.61</span>
+            <span class="after-price">$107.10</span>
+            <a href="/" class="learn-more">
+              <span>learn more</span>
+              <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+            <a href="/" class="book-now">
+              <span>book now</span>
+              <span class="material-symbols-outlined">calendar_month</span>
+            </a>
+          </div>
+        </div>
+      </li>
+   
+      <li>
+        <div class="product-med">
+          <header>
+            <h2>germaine's luau</h2>
+            <h3>backyard-style Hawaiian luau</h3>
+          </header>
+          <img src="images/preview/germainesluaupreview.jpg" alt="">
+          <div class="price">
+            <span class="before-price">$119.00</span>
+            <span class="after-price">$110.00</span>
+            <a href="/" class="learn-more">
+              <span>learn more</span>
+              <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+            <a href="/" class="book-now">
+              <span>book now</span>
+              <span class="material-symbols-outlined">calendar_month</span>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="product-med">
+          <header>
+            <h2>ka moana luau</h2>
+            <h3>aloha tower</h3>
+          </header>
+          <img src="images/preview/kamoanapreview.jpg" alt="">
+          <div class="price">
+            <span class="before-price">$135.09</span>
+            <span class="after-price">$112.00</span>
+            <a href="/" class="learn-more">
+              <span>learn more</span>
+              <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+            <a href="/" class="book-now">
+              <span>book now</span>
+              <span class="material-symbols-outlined">calendar_month</span>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a href="reservations.htm" id="reservations-link"><span>click here for more luaus</span><img src="images/oahu-luaus.png" alt=""></a>
+  </div>
+<!-- ======================================================== -->
+<div id="reading">
+  <div class="reading-content left">
+    <section>
+      <article>
+        <h2>h2 goes here</h2>
+        <p><span>V</span>isiting a Hawaiian luau is on the to-do list of many visitors to Oahu. This Hawaiian tradition is the perfect way to immerse yourself in local island culture, try Hawaiian delicacies and enjoy music and dances from Hawaii and other Polynesian islands.</p>
+        <p><span>A</span>mong the best Oahu luaus are, Aloha Kai Luau, Experience Nutridge Luau, Toa Luau and Ali'i Luau.. These are the luaus that stand out with cultural presentations, a big all-you-care-to-eat luau buffet dinner and Hawaiian-style musical entertainment.</p>
+        <a href="" class="reading-link">relevent link</a>
+      </article>
+    </section>
+    <figure>
+      <a href="">
+        <img src="images/preview/alohakaihero2.jpg" alt="">
+        <figcaption>aloha kai luau</figcaption>
+      </a>
+    </figure>
+  </div>
+  <div class="reading-content right">
+    <figure>
+      <a href="">
+        <img src="images/preview/nutridgeluaupreview.jpg" alt="">
+        <figcaption>nutridge luau</figcaption>
+      </a>
+    </figure>
+    <section>
+      <article>
+        <h2>h2 goes here</h2>
+        <p><span>A</span> Hawaiian luau offers the chance to sample popular luau foods, such as kalua roast pig, lomi lomi salmon, fresh island fish and poi, which is made from cooked and pounded taro root. Many Oahu luaus also include a variety of continental favorites and vegetarian options, so no one will leave hungry.</p>
+        <p><span>P</span>rior to the big luau feast, all guests are invited to watch or participate in island arts & crafts and other activities, which may include flower lei or bookmark making, ukulele and hula lessons and traditional games.</p>
+        <a href="" class="reading-link">relevent link</a>
+      </article>
+    </section>
+  </div>
+  <div class="reading-content left">
+    <section>
+      <article>
+        <h2>h2 goes here</h2>
+        <p><span>S</span>ome Oahu luaus also include the traditional imu ceremony, in which the kalua pua'a (roast pig) is removed from the imu, the underground oven. All Oahu luaus culminate with a spectacular Polynesian show featuring music and dances from the Hawaiian Islands, as well as Greater Polynesia.</p>
+        <p><span>W</span>e invite you to browse our site and choose your favorite Oahu luau. Make your reservation early as all Oahu luaus tend to sell out quickly. OahuLuaus.com offers the best prices on all luaus on Oahu!</p>
+        <a href="" class="reading-link">relevent link</a>
+      </article>
+    </section>
+    <figure>
+      <a href="">
+        <img src="images/preview/toaluaupreview.jpg" alt="">
+        <figcaption>toa luau</figcaption>
+      </a>
+    </figure>
+  </div>
+</div>
+<!-- ======================================================== -->
+<div id="guarantee-header">
+  <section>
+    <h2>why book with us?</h2>
+    <span>OahuLuaus has the best deals on Luaus On Oahu</span>
+  </section>
+</div>
+<div id="why-book-with">
+  <ul>
+    <li>
+      <div class="booking-details">
+        <div class="booking-img-container">
+          <img src="images/guarantee-icons.png" alt="" style="left:0;top:0;">
+        </div>
+        <header>Secure Shopping</header>
+        <p>Safe, secure online booking system with validated privacy protection.</p>
+      </div>
+    </li>
+    <li>
+      <div class="booking-details">
+        <div class="booking-img-container">
+          <img src="images/guarantee-icons.png" alt="" style="left:-11em;top:0;">
+        </div>
+        <header>Advance Booking<br />Satisfaction</header>
+        <p>Avoid sellouts and price increases. Relax knowing your luau tickets are reserved and guaranteed.</p>
+      </div>
+    </li>
+    <li>
+      <div class="booking-details">
+        <div class="booking-img-container">
+          <img src="images/guarantee-icons.png" alt="" style="left:-16.5em;top:0;">
+        </div>
+        <header>Friendly Support</header>
+        <p>Our staff will answer any questions you may have and ensure 100% satisfaction.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- =================================== -->
+<footer>
+  <div id="footer">
+    <div id="footer-left">
+      <a href="/" id="footer-logo"><img src="images/oahu-luaus.png" alt=""> <span>oahu luaus</span></a>
+      <a href="/reservations.htm" id="footer-reservations"><span class="material-symbols-outlined">calendar_month</span>book now</a>
+      <h4>contact us</h4>
+      <a href="tel:+18664829775" class="footer-phone"><span class="material-symbols-outlined">call</span>(toll free) 1-866-482-9775</a>
+      <a href="tel:+18088922082" class="footer-phone"><span class="material-symbols-outlined">call</span>(local) 808-892-2082</a>
+      <h4>follow us</h4>
+      <ul>
+        <li><a href=""><img src="images/youtube.svg" alt=""></a></li>
+        <li><a href=""><img src="images/facebook.svg" alt=""></a></li>
+        <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+        <li><a href=""><img src="images/twitter.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <div id="footer-center">
+      <h4>luaus</h4>
+        <a href="">Aloha Kai Luau</a><br>
+        <a href="">Pa'ina Waikiki</a><br>
+        <a href="">Diamond Head Luau</a><br>
+        <a href="">Germaine's Luau</a><br>
+        <a href="">Ka Moana Luau</a><br>
+        <a href="">Toa Luau</a><br>
+        <a href="">Experience Nutridge Luau</a><br>
+        <a href="">Waikiki Luau at Rock a Hula Cabana</a><br>
+        <a href="">Polynesian Cultural Center</a><br>
+    </div>
+    <div id="footer-right">
+      <h4>quick links</h4>
+      <a href="">home</a><br>
+      <a href="">about</a><br>
+      <a href="">reservations</a><br>
+      <a href="">blog</a><br>
+      <a href="">contact</a><br>
+      <a href="">cart</a><br>
+      <br>
+      <a href="">faq</a><br>
+      <a href="">privacy</a><br>
+      <a href="">terms & conditions</a><br>
+      <a href="">login</a><br>
+    </div>
+  </div>
+  <p>copyright 2024 oahuluaus.com all rights reserved</p>
+</footer>
+</body>
+<script src="js/home.js"></script>
+<script src="js/toggle.js"></script>
+</html>
