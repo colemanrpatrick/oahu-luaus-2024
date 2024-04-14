@@ -589,6 +589,9 @@
 .reading-link {
   float: right;
   text-transform: capitalize;
+  border: 2px solid;
+  padding: 0.5em 1em 0.25em 1em;
+  border-radius: 2em;
 }
 .reading-content article p span{
   font-size: 1.5em;
@@ -620,6 +623,18 @@
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
+}
+@media(max-width:1250px){
+  .reading-content figure img{
+    height: auto;
+    width: 100%;
+  }
+}
+@media(max-width:1150px){
+  .reading-content figure img{
+    height: 100%;
+    width: auto;
+  }
 }
 .reading-content figure figcaption {
   position: absolute;

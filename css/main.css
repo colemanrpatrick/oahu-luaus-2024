@@ -360,7 +360,7 @@ margin-right: 0.5em;
 display: block;
 border-radius: 5em;
 background-color: #3d0d3c;
-padding: 0.25em;
+padding: 0.5em 0.5em;
 text-align: right;
 margin-top: 0.5em;
 max-width: 11em;
@@ -390,7 +390,7 @@ font-size: 1.25em;
 display: block;
 border-radius: 5em;
 background-color: #FFC700;
-padding: 0.25em;
+padding: 0.5em;
 text-align: right;
 margin-top: 0.5em;
 max-width: 8em;
@@ -1532,22 +1532,24 @@ footer p {
 .accordion .tab{
 	width: 100%;
 	background: whitesmoke;
+	list-style-type: none;
 }
 .accordion .tab header {
 	padding: 1em;
 	text-align: center;
 	text-transform: capitalize;
 	font-weight: 100;
-	background: #06425b;
-	border-bottom: 2px solid #1c5c77;
+	background: antiquewhite;
+	border-bottom: 2px solid #67243a;
 	color: #efefef;
 	cursor: pointer;
   transition: 0.3s;
-	font-family: "Oleo Script", sans-serif;
 	font-size: 1.25em;
+	font-weight: bold;
+	background: #804261;
 }
 .accordion .tab.active header{
-  color:#053c51;
+  color:#67243a;
   background: #f7b801;
 }
 .accordion .tab .content {
@@ -1557,9 +1559,9 @@ footer p {
 	transform-origin: top;
 }
 .accordion .tab .content p {
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: 300;
-	line-height: 2.5em;
+	line-height: 2em;
 	max-width: 40em;
 	margin: 0 auto;
 	width: 90%;

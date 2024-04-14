@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karantina:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>Oahu Luaus</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="header-top">
+      <ul>
+        <li id="phone">
+          <a href="tel:+18664829775" class="phone">(toll free) 1-866-482-9775</a>
+          <a href="tel:+18088922082" class="phone">(local) 808-892-2082</a>
+        </li>
+        <li id="book-now-main">
+          <a href="/reservations.htm"><span class="material-symbols-outlined">calendar_month</span>book now</a>
+        </li>  
+      </ul>
+
+    </div>
+    <ul id="header-main">
+      <li id="logo">
+        <a href="/"> <img src="images/oahu-luaus.png" alt=""> <span>oahu luaus</span></a>
+      </li>
+      <li id="main-nav">
+        <nav>
+          <a href="luaus.htm">Luaus</a>
+          <a href="about.htm">About</a>
+          <a href="blog.htm">Blog</a>
+          <a href="faq.htm">FAQ</a>
+          <a href="contact.htm">Contact</a>
+          <a href="cart/edit" class="cart-link"><span class="material-symbols-outlined">shopping_cart</span>Cart</a>
+        </nav>
+      </li>
+      <button type="button" name="button" class="menu-btn"
+        onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+        <hr class="menu-btn-hr-1" />
+        <hr class="menu-btn-hr-2" />
+        <hr class="menu-btn-hr-3" />
+      </button>
+    </ul>
+  </header>
+  <!-- =================================================== -->
+  <div class="page-hero" style="background-image: url('images/palm-trees-background.png')">
+    <section>
+      <h1>frequently asked questions</h1>
+    </section>
+  </div>
+  <!-- =================================================== -->
+  
+  <div class="content-container">
+  
+<ul class="accordion">
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">What is a luau?</header>
+        <article class="content">
+<p>A luau is great way to immerse yourself in Hawaiian culture, try traditional island foods and watch a Polynesian show with music and dances from Hawaii and greater Polynesia. </p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">What does my admission ticket include?</header>
+        <article class="content">
+<p>Your admission includes a luau dinner and a Polynesian show, featuring traditional dances of the Islands. Most luaus also feature a variety of island arts & crafts and cultural presentations, such as hula and ukulele lessons.</p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">Do I need to make a reservation?</header>
+        <article class="content">
+<p>Yes. We recommend making a reservation at least a couple of days in advance. Many popular luaus sell out sometimes weeks in advance, so the earlier you can book, the better.</p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">Are there foods for vegetarians?</header>
+        <article class="content">
+<p>Many luaus offer vegetarian food options. Please refer to the specific luau page for more information about menu options.</p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">What do I wear?</header>
+        <article class="content">
+<p>Casual dress is fine, such as casual Aloha attire. For chilly evenings a light jacket is recommended. </p>
+        </article>
+  
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">How long does a luau last?</header>
+        <article class="content">
+<p>A luau typically lasts around 3 hours.</p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">Is a luau wheelchair accessible?</header>
+        <article class="content">
+<p>Yes. If you require special accommodations, have a wheelchair or have any other special needs, please contact us at least 48 hours in advance of your luau date. </p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">What happens if the weather is bad?</header>
+        <article class="content">
+<p>On the rare occasion that a luau needs to be canceled, you will be notified and will receive a refund. </p>
+        </article>
+</li>
+    <li class="tab">
+        <header onclick="tabToggle(this,'tab')">My question is not on this list.</header>
+        <article class="content">
+<p>We are here to help. If you have another question about any of the luaus on our website, please <a href="tel:+18664829775" id="desktop-phone">call</a> or <a href="/contact.htm">email</a> our reservations department.</p>
+        </article>
+</li>
+ </ul>
+
+</div>
+
+
+  <!--====================================================-->
+</body>
+<script src="js/toggle.js"></script>
+
+</html>
